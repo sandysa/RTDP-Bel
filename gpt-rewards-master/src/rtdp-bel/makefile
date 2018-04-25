@@ -3,9 +3,9 @@ ARCH	=	-msse -mfpmath=sse -msse2 -mmmx
 CFLAGS	=	-Wall -O3 $(ARCH) -DREVISION=\"$(REVISION)\" $(INCDIR)
 CC	=	g++ $(CFLAGS)
 LD	=	g++ $(LDFLAGS)
-RL_INC	=	-I/usr/local/opt/readline/include
-RL_LIB	=	-L/usr/local/opt/readline/lib
-
+RL_INC	=	-I/usr/include
+#RL_LIB	=	-L/usr/local/opt/readline/lib
+RL_LIB	=	-L/usr/lib
 #
 # don't touch beyond this point
 #

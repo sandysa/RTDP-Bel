@@ -19,10 +19,11 @@
 #include <iostream>
 #include <float.h>
 #include <map>
-#include <limits.h>
+#include <limits>
 #include <list>
 
 class Sondik;
+using std::numeric_limits;
 
 class StandardPOMDP : public POMDP {
   protected:
