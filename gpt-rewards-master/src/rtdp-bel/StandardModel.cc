@@ -81,7 +81,7 @@ StandardModel::StandardModel(const char *cassandraFilename)
     // compute model
     cout << "computing model for action:" << flush;
     for( int action = 0; action < numActions_; ++action ) {
-        cout << " " << action << flush; 
+        cout << " " << action << flush;
 
         // transitions
         assert(P[action]->num_rows == numStates_);
